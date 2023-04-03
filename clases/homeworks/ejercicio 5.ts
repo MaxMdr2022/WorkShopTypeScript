@@ -1,6 +1,8 @@
 class Person {
-    protected name: string;
-    protected age: number;
+     name: string;
+    // protected age: number;  // error
+    // protected name: string; // error
+    age: number;
     //private mail: string;
     constructor(name: string, age: number) {
       this.name = name;
@@ -9,7 +11,9 @@ class Person {
   }
   
   class Student extends Person {
-    private regular: boolean;
+    // private regular: boolean;  // error
+    regular: boolean;
+
     
     constructor(name: string, age: number, regular: boolean) {
       super(name, age);
