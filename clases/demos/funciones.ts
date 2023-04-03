@@ -19,6 +19,15 @@ function suma(a: string | number, b: string | number): number {
     return a + b
 }
 
+console.log(suma("hola", " maxi")) // NaN
+
+console.log(suma(12, 12))  // 24
+
+console.log(suma("hola", 12)) // NaN
+
+
+
+
 function consologea(): void {
     console.log('algo')
     //react cuando seteemos un estado!

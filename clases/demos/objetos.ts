@@ -23,7 +23,8 @@ let matias: Persona = {
     hobbies: [{nombre: 'leer'}]
 }
 
-matias.hobbies[0].nombre
+console.log(matias.hobbies[0].nombre); 
+
 
 let franco: Estudiante = {
     nombre: 'franco',

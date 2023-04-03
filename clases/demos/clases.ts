@@ -19,14 +19,17 @@ class Estudiante extends Persona {
         this.isActive = false
     }
     funcionPrueba() {
-        this.email
+       return this.email 
     }
 }
 
 
 let mati = new Persona('matias', 29, 'mati@mail.com')
-let fede = new Persona('fede', 29, 'fede@mail.com')
-fede.email
+let fede = new Estudiante('fede', 29, 'fede@mail.com')
+// fede.email // Property 'email' is protected and only accessible within class 'Persona' and its subclasses
 mati.nombre //publico, lo puedo acceder desde fuera de la clase
-mati.getEdad()
+
+console.log(mati.getEdad()) // mi edad es 29
+
+console.log(fede.funcionPrueba()) // fede@email.com
 export {}
